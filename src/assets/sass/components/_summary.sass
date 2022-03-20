@@ -1,0 +1,88 @@
+.summary
+  padding: 30px
+  background-color: $white
+  width: 350px
+  height: max-content
+  border-radius: 8px
+  color: $black
+
+  &-content
+    display: flex
+    flex-direction: column
+    gap: 24px
+
+  h6
+    text-transform: uppercase
+
+  &-items
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &-item
+
+    &-img
+      img
+        border-radius: 8px
+        height: 64px
+
+    &-details
+      width: 150px
+      display: flex
+      flex-direction: column
+
+      p
+        text-transform: uppercase
+        font-weight: 500
+            
+        &:last-child
+          font-weight: 600
+          opacity: 0.5
+      
+    &-quantity
+      font-weight: 600
+      opacity: 0.5
+
+  
+  &-total-price
+    margin-bottom: 10px
+    display: flex
+    justify-content: space-between
+
+    span
+      opacity: 0.5
+      text-transform: uppercase
+  
+  &-shipping-price
+    margin-bottom: 10px
+    display: flex
+    justify-content: space-between
+
+    span
+      opacity: 0.5
+      text-transform: uppercase
+
+  &-vat-price
+    margin-bottom: 30px
+    display: flex
+    justify-content: space-between
+
+    span
+      opacity: 0.5
+      text-transform: uppercase
+
+  &-grand-total
+    display: flex
+    justify-content: space-between
+
+    span
+      opacity: 0.5
+      text-transform: uppercase        
+
+    h6
+      color: $rawsienna
+      
+  &-checkout-btn
+
+    button
+      width: 100%

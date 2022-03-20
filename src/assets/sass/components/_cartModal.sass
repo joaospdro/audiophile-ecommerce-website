@@ -1,0 +1,96 @@
+.cart-modal
+  position: fixed
+  z-index: 50
+  top: 13%
+  left: 60%
+
+  &-open
+    overflow: hidden
+    
+  &-overlay
+    position: fixed
+    background-color: rgba(0, 0, 0, 0.4)
+    bottom: 0
+    left: 0
+    right: 0
+    top: 0
+    z-index: 40
+
+  h6
+    text-transform: uppercase
+
+  &-content
+    color: $black
+    padding: 24px
+    background-color: $white
+    border-radius: 8px
+    width: 377px
+    
+    .cart-modal-items
+      display: flex
+      column-gap: 24px
+      align-items: center
+
+      &:not(:last-child)
+        margin-bottom: 24px
+
+    .cart-item
+      &-header
+        margin-bottom: 30px
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        button
+          text-decoration: underline
+
+          &:hover
+            transition: 0.7s
+            color: $rawsienna
+      
+      &-footer
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        span
+          text-transform: uppercase
+          opacity: 0.5
+
+      &-quantity
+        width: 107px
+        padding: 4px 12px 4px 12px
+        background-color: $seashell
+        display: flex
+        column-gap: 20px
+        justify-content: center
+        align-items: center
+
+        span
+          user-select: none
+          text-align: center
+          min-width: 17px
+          max-width: 17px
+          
+      &-img
+        img
+          border-radius: 8px
+          height: 64px
+            
+      &-details
+        width: 150px
+        display: flex
+        flex-direction: column
+
+        p
+          text-transform: uppercase
+          font-weight: 500
+            
+          &:last-child
+            opacity: 0.5
+
+.cart-checkout-btn
+  margin-top: 24px
+  
+  button
+    width: 100%

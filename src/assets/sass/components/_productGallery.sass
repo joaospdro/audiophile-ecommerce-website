@@ -1,0 +1,25 @@
+.product-gallery
+  margin-top: 160px
+  height: 592px
+  display: grid
+  column-gap: 30px
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: repeat(1, minmax(max-content, 1fr))
+  color: $black
+
+  img
+    border-radius: 8px
+
+  &-first
+    grid-column-start: 1
+    grid-column-end: 2
+
+  &-second
+    grid-column-start: 1
+    grid-column-end: 2
+  
+  &-third
+    grid-column-start: 2
+    grid-column-end: 2
+    grid-row-start: 1
+    grid-row-end: 3

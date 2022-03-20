@@ -1,0 +1,42 @@
+.categories
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  color: $black
+  margin-top: 200px
+
+  @include mobile
+    flex-direction: column
+    gap: 100px
+    margin-left: 60px
+
+  .category
+    height: 204px
+    width: 350px
+    background-color: $seashell
+    border-radius: 8px
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    text-align: center
+    text-transform: uppercase
+    padding-bottom: 30px
+
+    &-img
+      align-self: center
+      width: 200px
+
+    h6
+      margin-bottom: 10px
+
+    &-shop
+      a
+        color: $black
+        opacity: 0.5
+        font-weight: 500
+        margin-right: 10px
+
+        &:hover
+          transition: .3s
+          opacity: 1
+          color: $rawsienna

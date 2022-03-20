@@ -1,0 +1,29 @@
+header
+  position: absolute
+  width: 100%
+  z-index: 40
+  background-color: transparent
+
+.nav-header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 30px 0px 30px 0px
+  border-radius: 1px
+  box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.2)
+  
+.links
+    display: flex
+    align-items: center
+    text-transform: uppercase
+
+    a
+      &:hover
+        transition: .3s
+        color: $rawsienna
+
+      &:not(:last-child)
+        margin-right: 32px
+
+.cart
+  cursor: pointer

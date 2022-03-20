@@ -1,0 +1,44 @@
+footer
+  background-color: $codgray
+  height: 365px
+
+  .nav-footer
+    padding-top: 100px
+    display: grid
+    grid-gap: 30px
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: auto auto 1fr
+
+    &::before
+      position: absolute
+      transform: translateY(-100px)
+      background: $rawsienna
+      content: ''
+      height: 4px
+      width: 100px
+
+    &-description
+      grid-column: 1
+      opacity: 0.5
+      max-width: 33rem
+
+    &-copy
+      grid-column: 1
+      font-weight: 600
+      opacity: 0.5
+      padding-top: 10px
+    
+    &-links
+      grid-column: 2
+      grid-row: 1
+      justify-content: flex-end
+
+    &-social
+      align-self: flex-end
+      grid-column: 2
+      grid-row: 2
+      justify-content: flex-end
+      
+      a
+        &:not(:last-child)
+          margin-right: 18px
