@@ -32,18 +32,18 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](https://i.imgur.com/fl1wNeS.png)
 
 ### Links
 
-- Live Site URL: 
+- Live Site URL: https://audiophile-ecommerce-website-joaospedro.vercel.app/
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- [SASS](https://sass-lang.com/)
+- [Sass](https://sass-lang.com/)
 - [Vue](https://vuejs.org/)
 - [Vue Router](https://router.vuejs.org/)
 - [Vuex](https://vuex.vuejs.org/)
